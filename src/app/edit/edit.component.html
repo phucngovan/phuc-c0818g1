@@ -1,0 +1,19 @@
+<div class="col-md-6">
+  <h2 class="text-center">Edit</h2>
+  <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="tag">Tag:</label>
+      <input formControlName="tag" placeholder="Tag" name="tag" class="form-control" id="tag">
+    </div>
+    <div class="form-group">
+      <label for="url">Url:</label>
+      <input formControlName="url" placeholder="Url" name="url" class="form-control" id="url">
+    </div>
+    <div class="form-group">
+      <label for="descriptions">Descriptions:</label>
+      <input formControlName="descriptions" placeholder="Descriptions" name=" descriptions" class="form-control" id="descriptions">
+    </div>
+
+    <button class="btn btn-success" >Save</button>
+  </form>
+</div>

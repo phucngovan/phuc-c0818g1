@@ -1,0 +1,25 @@
+<div class="col-md-6">
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">ID</th>
+      <th>Tag</th>
+      <th>Url</th>
+      <th>Descriptions</th>
+      <th>Delete</th>
+      <th>Edit</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let awesome of awesomes">
+      <td class="hidden">{{awesome.id}}</td>
+      <td>{{awesome.tag}}</td>
+      <td>{{awesome.url}}</td>
+      <td>{{awesome.descriptions}}</td>
+      <td><button class="btn btn-danger" (click)="deleteAwesome(awesome)">Delete</button></td>
+      <td><button class="btn btn-danger" (click)="editAwesome(awesome)" style="background: blue">Edit</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
